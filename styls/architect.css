@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@300;400;500;700;900&display=swap');
-
+/* shared stylesssss */
 * {
   font-family: 'Merriweather', serif;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Work Sans', sans-serif;
 }
 
+.btn-primery {
+  width: 180px;
+  height: 64px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: rgb(255, 144, 14);
+  border: none;
+  margin: 30px 0;
+}
+
+
+/* nav styles!!! */
+
 header {
   background-color: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
 }
 
-/* nav styles!!! */
 nav {
   display: flex;
   justify-content: space-between;
@@ -60,14 +74,30 @@ li>a {
   font-weight: 400;
 }
 
-.banner-content>button {
-  width: 180px;
-  height: 64px;
-  border-radius: 8px;
-  color: white;
-  font-weight: 600;
-  font-size: 1.2rem;
-  background: rgb(255, 144, 14);
-  border: none;
-  margin: 30px 0;
+.banner>img{
+  width: 100%;
 }
+
+
+/* responsive media query mini screen*/
+@media screen and (max-width: 576px) {
+  header{
+    padding: 20px;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+}
+
+/* responsive media query medium screen*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header{
+    padding: 50px;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+}
+
